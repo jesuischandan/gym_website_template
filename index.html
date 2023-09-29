@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Prabhat Fitness</title>
+    <style>
+        body {
+            font-family: cursive;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/GYM01.jpg');
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 60px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 136px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 24px;
+            font-size: 21px;
+        }
+
+        .mid {
+            display: block;
+            width: 40%;
+            margin: 53px auto;
+            /* border: 2px solid yellow; */
+
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 46px;
+            display: inline-block;
+            /* border: 2px solid green; */
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 15px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+            font-family: cursive;
+            margin: 0px 13px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(39, 37, 37);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 145px 48px;
+            padding: 60px;
+            width: 33%;
+            border-radius: 23px;
+        }
+
+        .form-group input {
+            font-size: 20px;
+            font-family: cursive;
+            margin: 10px auto;
+            text-align: center;
+            display: block;
+            border: 2px solid black;
+            width: 508px;
+            padding: 5px;
+            border-radius: 10px;
+
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            margin: 29px auto;
+            width: 104%;
+            display: block;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/GYM02.png" alt="">
+            <div>Prabhat Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Best Jym of Patna</h1>
+        <form action="action.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your E-mail Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
